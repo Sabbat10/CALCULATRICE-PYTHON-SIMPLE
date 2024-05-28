@@ -1,6 +1,6 @@
 ## les variables
-nombre_un = 2
-nombre_deux = 0
+nombre_un = len(input("Entrez un nombre : "))
+nombre_deux = len(input("Entrez un autre nombre : "))
 
 ## les fonctions
 def addition(premier_nombre, deuxieme_nombre):
