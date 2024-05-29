@@ -19,22 +19,29 @@ nombre_deux = int(input("Entrez un autre nombre : "))
 
 ## les fonctions
 def addition(premier_nombre, deuxieme_nombre):
-    return premier_nombre + deuxieme_nombre
+    resultat = premier_nombre + deuxieme_nombre
+    return resultat
 
 def multiplication(premier_nombre, deuxieme_nombre):
-    return premier_nombre * deuxieme_nombre
+    resultat = premier_nombre * deuxieme_nombre
+    return resultat
 
 def soustraction(premier_nombre, deuxieme_nombre):
-    return premier_nombre - deuxieme_nombre
+    resultat = premier_nombre - deuxieme_nombre
+    return resultat
 
 def division(premier_nombre, deuxieme_nombre):
     if nombre_deux == 0:
         return "Impossible de diviser par 0"
-    return premier_nombre / deuxieme_nombre
+    resultat = premier_nombre / deuxieme_nombre
+    return resultat
 
-## les instructions
-print(f"{nombre_un} + {nombre_deux} = {addition(nombre_un, nombre_deux)}")
-print(f"{nombre_un} * {nombre_deux} = {multiplication(nombre_un, nombre_deux)}")
-print(f"{nombre_un} - {nombre_deux} = {soustraction(nombre_un, nombre_deux)}")
-print(f"{nombre_un} / {nombre_deux} = {division(nombre_un, nombre_deux)}")
-
+## les resultats
+if choice == 1:
+    print(f"{nombre_un} + {nombre_deux} = {addition(nombre_un, nombre_deux)}")
+elif choice == 2:
+    print(f"{nombre_un} * {nombre_deux} = {multiplication(nombre_un, nombre_deux)}")
+elif choice == 3:
+    print(f"{nombre_un} - {nombre_deux} = {soustraction(nombre_un, nombre_deux)}")
+elif choice == 4:
+    print(f"{nombre_un} / {nombre_deux} = {division(nombre_un, nombre_deux)}")
