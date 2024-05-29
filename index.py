@@ -1,3 +1,18 @@
+## choisez l'opération
+choice = int(input("Choisissez l'opération \n 1: addition \n 2: multiplication\n 3: soustraction \n 4: division \n \n choisissez une opération : "))
+
+## les conditions
+if choice == 1:
+    print("Vous avez choisi l'addition")
+elif choice == 2:
+    print("Vous avez choisi la multiplication")
+elif choice == 3:
+    print("Vous avez choisi la soustraction")
+elif choice == 4:
+    print("Vous avez choisi la division")
+else:
+    print("Choix invalide")
+
 ## les variables
 nombre_un = int((input("Entrez un nombre : ")))
 nombre_deux = int(input("Entrez un autre nombre : "))
