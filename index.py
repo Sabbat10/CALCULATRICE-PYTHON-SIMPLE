@@ -1,5 +1,11 @@
 ## choisez l'opération
-choice = int(input("Choisissez l'opération \n 1: addition \n 2: multiplication\n 3: soustraction \n 4: division \n \n choisissez une opération : "))
+# choice = int(input("Choisissez l'opération \n 1: addition \n 2: multiplication\n 3: soustraction \n 4: division \n \n choisissez une opération : "))
+while True:
+    choice = int(input("Choisissez l'opération \n 1: addition \n 2: multiplication\n 3: soustraction \n 4: division \n \n Choisissez une opération : "))
+    if choice in [1, 2, 3, 4]:
+        break
+    else:
+        print("Choix invalide. Veuillez choisir une opération valide.")
 
 ## les conditions
 if choice == 1:
@@ -14,6 +20,7 @@ else:
     print("Choix invalide")
 
 ## les variables
+
 nombre_un = int((input("Entrez un nombre : ")))
 nombre_deux = int(input("Entrez un autre nombre : "))
 
