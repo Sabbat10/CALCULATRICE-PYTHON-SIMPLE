@@ -2,7 +2,6 @@
 # from operation import *
 from operation import addition, multiplication, soustraction, division
 
-
 ## choisez l'opération
 # choice = int(input("Choisissez l'opération \n 1: addition \n 2: multiplication\n 3: soustraction \n 4: division \n \n choisissez une opération : "))
 while True:
@@ -29,9 +28,6 @@ else:
 nombre_un = int((input("Entrez un nombre : ")))
 nombre_deux = int(input("Entrez un autre nombre : "))
 
-## les fonctions
-
-
 # ## les resultats
 if choice == 1:
     print(f"{nombre_un} + {nombre_deux} = {addition(nombre_un, nombre_deux)}")
@@ -41,3 +37,5 @@ elif choice == 3:
         print(f"{nombre_un} - {nombre_deux} = {soustraction(nombre_un, nombre_deux)}")
 elif choice == 4:
         print(f"{nombre_un} / {nombre_deux} = {division(nombre_un, nombre_deux)}")
+        
+        
